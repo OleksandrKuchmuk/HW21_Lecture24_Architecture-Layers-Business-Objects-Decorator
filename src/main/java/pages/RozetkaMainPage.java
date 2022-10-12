@@ -1,5 +1,7 @@
 package pages;
 
+import elements.Button;
+import elements.Input;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -9,10 +11,10 @@ public class RozetkaMainPage extends BasePage {
     private static final Logger LOGGER = LogManager.getLogger(RozetkaMainPage.class);
 
     @FindBy(xpath = "//input")
-    private WebElement searchBar;
+    private Input searchBar;
 
     @FindBy(xpath = "//button[contains(text(), 'Знайти')]")
-    private WebElement searchButton;
+    private Button searchButton;
 
     public RozetkaMainPage clickOnSearchBar() {
         LOGGER.info("Click on SearchBar");

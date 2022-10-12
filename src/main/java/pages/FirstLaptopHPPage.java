@@ -1,5 +1,6 @@
 package pages;
 
+import elements.Button;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -9,10 +10,10 @@ public class FirstLaptopHPPage extends BasePage{
     private static final Logger LOGGER = LogManager.getLogger(FirstLaptopHPPage.class);
 
     @FindBy(xpath = "//span[@class='buy-button__label ng-star-inserted']")
-    private WebElement buyButton;
+    private Button buyButton;
 
     @FindBy(xpath = "//a[@data-testid='cart-receipt-submit-order']")
-    private WebElement toOrderButtonOnAlertWindow;
+    private Button toOrderButtonOnAlertWindow;
 
     public FirstLaptopHPPage clickOnBuyButton(){
         LOGGER.info("Clicking on 'Buy' button");

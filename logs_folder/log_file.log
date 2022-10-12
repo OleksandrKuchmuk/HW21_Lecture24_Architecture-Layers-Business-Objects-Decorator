@@ -1,0 +1,54 @@
+[INFO] 2022-10-11 18:48:12.938 RozetkaTest:18 - Start Test 
+[INFO] 2022-10-11 18:48:14.648 RozetkaMainPage:18 - Click on SearchBar 
+[INFO] 2022-10-11 18:48:15.940 RozetkaMainPage:24 - Clear SearchBar 
+[INFO] 2022-10-11 18:48:16.015 RozetkaMainPage:30 - Send query 'laptop' to searchBar 
+[INFO] 2022-10-11 18:48:16.095 RozetkaMainPage:36 - Click on search button and go to AllLaptopPage 
+[INFO] 2022-10-11 18:48:19.032 AllLaptopPage:40 - Choose seller 'Rozetka' in left side sorting menu 
+[INFO] 2022-10-11 18:48:37.098 RozetkaTest:18 - Start Test 
+[INFO] 2022-10-11 18:48:38.661 RozetkaMainPage:18 - Click on SearchBar 
+[INFO] 2022-10-11 18:48:38.890 RozetkaMainPage:24 - Clear SearchBar 
+[INFO] 2022-10-11 18:48:40.111 RozetkaMainPage:30 - Send query 'laptop' to searchBar 
+[INFO] 2022-10-11 18:48:40.176 RozetkaMainPage:36 - Click on search button and go to AllLaptopPage 
+[INFO] 2022-10-11 18:48:43.067 AllLaptopPage:40 - Choose seller 'Rozetka' in left side sorting menu 
+[INFO] 2022-10-11 18:48:47.579 AllLaptopPage:47 - Choose brand 'HP' in left side sorting menu 
+[INFO] 2022-10-11 18:48:47.938 AllLaptopPage:28 - Click on sorting drop-down menu 
+[INFO] 2022-10-11 18:48:49.781 AllLaptopPage:34 - Select 'From Higher to Lower Price' in sorting drop-down menu 
+[INFO] 2022-10-11 18:48:50.976 AllLaptopPage:53 - Choose first laptop on page after sorting 
+[INFO] 2022-10-11 18:48:51.659 FirstLaptopHPPage:18 - Clicking on 'Buy' button 
+[INFO] 2022-10-11 18:49:26.992 RozetkaTest:18 - Start Test 
+[INFO] 2022-10-11 18:49:29.958 RozetkaMainPage:18 - Click on SearchBar 
+[INFO] 2022-10-11 18:49:30.063 RozetkaMainPage:24 - Clear SearchBar 
+[INFO] 2022-10-11 18:49:30.191 RozetkaMainPage:30 - Send query 'laptop' to searchBar 
+[INFO] 2022-10-11 18:49:30.272 RozetkaMainPage:36 - Click on search button and go to AllLaptopPage 
+[INFO] 2022-10-11 18:49:35.353 AllLaptopPage:40 - Choose seller 'Rozetka' in left side sorting menu 
+[INFO] 2022-10-11 18:49:37.497 AllLaptopPage:47 - Choose brand 'HP' in left side sorting menu 
+[INFO] 2022-10-11 18:49:37.740 AllLaptopPage:28 - Click on sorting drop-down menu 
+[INFO] 2022-10-11 18:49:39.161 AllLaptopPage:34 - Select 'From Higher to Lower Price' in sorting drop-down menu 
+[INFO] 2022-10-11 18:49:40.285 AllLaptopPage:53 - Choose first laptop on page after sorting 
+[INFO] 2022-10-11 18:49:40.467 FirstLaptopHPPage:18 - Clicking on 'Buy' button 
+[INFO] 2022-10-11 18:50:19.170 RozetkaTest:18 - Start Test 
+[INFO] 2022-10-11 18:50:20.795 RozetkaMainPage:18 - Click on SearchBar 
+[INFO] 2022-10-11 18:50:21.991 RozetkaMainPage:24 - Clear SearchBar 
+[INFO] 2022-10-11 18:50:22.033 RozetkaMainPage:30 - Send query 'laptop' to searchBar 
+[INFO] 2022-10-11 18:50:22.102 RozetkaMainPage:36 - Click on search button and go to AllLaptopPage 
+[INFO] 2022-10-11 18:50:25.551 AllLaptopPage:40 - Choose seller 'Rozetka' in left side sorting menu 
+[INFO] 2022-10-11 18:50:30.415 AllLaptopPage:47 - Choose brand 'HP' in left side sorting menu 
+[INFO] 2022-10-11 18:50:30.577 AllLaptopPage:28 - Click on sorting drop-down menu 
+[INFO] 2022-10-11 18:50:31.972 AllLaptopPage:34 - Select 'From Higher to Lower Price' in sorting drop-down menu 
+[INFO] 2022-10-11 18:50:33.076 AllLaptopPage:53 - Choose first laptop on page after sorting 
+[INFO] 2022-10-11 18:50:33.292 FirstLaptopHPPage:18 - Clicking on 'Buy' button 
+[INFO] 2022-10-11 18:50:36.656 FirstLaptopHPPage:24 - Clicking on 'To order' button 
+[INFO] 2022-10-11 18:50:36.856 BasketPage:18 -  
+[INFO] 2022-10-11 18:50:39.569 BasketPage:23 - Getting total price from basket 
+[INFO] 2022-10-11 18:50:39.749 BasketPage:28 - Method to take integer number from string 
+[INFO] 2022-10-12 12:40:47.396 RozetkaTest:18 - Start Test 
+[INFO] 2022-10-12 12:40:49.944 RozetkaMainPage:20 - Click on SearchBar 
+[INFO] 2022-10-12 12:40:50.857 RozetkaMainPage:26 - Clear SearchBar 
+[INFO] 2022-10-12 12:40:51.026 RozetkaMainPage:32 - Send query 'laptop' to searchBar 
+[INFO] 2022-10-12 12:40:51.103 RozetkaMainPage:38 - Click on search button and go to AllLaptopPage 
+[INFO] 2022-10-12 12:40:53.983 AllLaptopPage:43 - Choose seller 'Rozetka' in left side sorting menu 
+[INFO] 2022-10-12 12:40:58.067 AllLaptopPage:50 - Choose brand 'HP' in left side sorting menu 
+[INFO] 2022-10-12 12:40:58.241 AllLaptopPage:31 - Click on sorting drop-down menu 
+[INFO] 2022-10-12 12:40:59.769 AllLaptopPage:37 - Select 'From Higher to Lower Price' in sorting drop-down menu 
+[INFO] 2022-10-12 12:41:00.941 AllLaptopPage:56 - Choose first laptop on page after sorting 
+[INFO] 2022-10-12 12:41:01.212 FirstLaptopHPPage:19 - Clicking on 'Buy' button 

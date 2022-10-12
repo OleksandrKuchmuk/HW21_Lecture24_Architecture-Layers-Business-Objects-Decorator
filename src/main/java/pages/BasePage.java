@@ -1,11 +1,14 @@
 package pages;
 
 import driver.DriverManager;
+import elements.Decorator;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
 
 public class BasePage {
 
     public BasePage() {
-        PageFactory.initElements(DriverManager.getDriver(), this);
+
+        PageFactory.initElements(new Decorator(new DefaultElementLocatorFactory(DriverManager.getDriver())), this);
     }
 }

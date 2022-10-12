@@ -1,5 +1,6 @@
 package pages;
 
+import elements.FieldWithData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -9,13 +10,13 @@ public class BasketPage extends BasePage {
     private static final Logger LOGGER = LogManager.getLogger(BasketPage.class);
 
     @FindBy(xpath = "//dt[@class='checkout-total__label' and contains(text(), 'товар')]")
-    private WebElement countProductsInBasket;
+    private FieldWithData countProductsInBasket;
 
     @FindBy(xpath = "//dd[@class='checkout-total__value checkout-total__value_size_large']")
-    private WebElement totalPriseIfProductsInBasket;
+    private FieldWithData totalPriseIfProductsInBasket;
 
     public String getCountProductsInBasket() {
-        LOGGER.info("");
+        LOGGER.info("Getting count products in Basket");
         return countProductsInBasket.getText();
     }
 

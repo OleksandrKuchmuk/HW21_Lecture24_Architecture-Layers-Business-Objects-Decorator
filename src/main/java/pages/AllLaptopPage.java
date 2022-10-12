@@ -1,5 +1,8 @@
 package pages;
 
+import elements.CheckBox;
+import elements.DropDownMenu;
+import elements.Product;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -9,19 +12,19 @@ public class AllLaptopPage extends BasePage {
     private static final Logger LOGGER = LogManager.getLogger(AllLaptopPage.class);
 
     @FindBy(xpath = "//select")
-    private WebElement sortingDropDownMenu;
+    private DropDownMenu sortingDropDownMenu;
 
     @FindBy(xpath = "//select/option[@value='2: expensive']")
-    private WebElement selectFromHighToLowPriceInSortingDropDownMenu;
+    private DropDownMenu selectFromHighToLowPriceInSortingDropDownMenu;
 
     @FindBy(xpath = "//a[@data-id='Rozetka']")
-    private WebElement sellerRozetkaCheckBox;
+    private CheckBox sellerRozetkaCheckBox;
 
     @FindBy(xpath = "//a[@class='checkbox-filter__link' and @ data-id='HP']")
-    private WebElement checkBoxHP;
+    private CheckBox checkBoxHP;
 
     @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted'][1]")
-    private WebElement firstLaptopOnPageHp;
+    private Product firstLaptopOnPageHp;
 
 
     public AllLaptopPage clickOnSortingDropDownMenu() {
@@ -38,7 +41,6 @@ public class AllLaptopPage extends BasePage {
 
     public AllLaptopPage chooseSellerRozetka() {
         LOGGER.info("Choose seller 'Rozetka' in left side sorting menu");
-
         sellerRozetkaCheckBox.click();
         return this;
     }
