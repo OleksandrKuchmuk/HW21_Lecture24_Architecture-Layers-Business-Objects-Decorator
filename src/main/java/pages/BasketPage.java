@@ -3,7 +3,6 @@ package pages;
 import elements.FieldWithData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class BasketPage extends BasePage {
@@ -15,19 +14,25 @@ public class BasketPage extends BasePage {
     @FindBy(xpath = "//dd[@class='checkout-total__value checkout-total__value_size_large']")
     private FieldWithData totalPriseIfProductsInBasket;
 
-    public String getCountProductsInBasket() {
+    public int getCountProductsInBasket() {
         LOGGER.info("Getting count products in Basket");
-        return countProductsInBasket.getText();
+        return takeIntFromString(countProductsInBasket.getText(), 1);
     }
 
     public int getTotalPriceOfProductsInBasket() {
         LOGGER.info("Getting total price from basket");
-        return takeIntFromString(totalPriseIfProductsInBasket.getText());
+        return takeIntFromString(totalPriseIfProductsInBasket.getText(), 2);
     }
 
-    private int takeIntFromString(String str) {
+    //this method make split of string and returns 'digitGroupCounter' values of array(integer number)
+    // if you have '125 362 dfr' than you choose  'digitGroupCounter' = 2
+    private int takeIntFromString(String str, int digitGroupCounter) {
         LOGGER.info("Method to take integer number from string");
-        String str1 = str.replaceAll("\\s", "").replaceAll(".$", "");
-        return Integer.parseInt(str1);
+        String[] words = str.split(" ");
+        String finalString = "";
+        for (int i = 0; i < digitGroupCounter; i++) {
+            finalString += words[i];
+        }
+        return Integer.parseInt(finalString);
     }
 }

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class AbstractElement implements WebElement {
-    WebElement webElement;
+    private WebElement webElement;
 
     public AbstractElement(WebElement webElement) {
         this.webElement = webElement;
@@ -15,17 +15,16 @@ public class AbstractElement implements WebElement {
     @Override
     public void click() {
         webElement.click();
-
     }
 
     @Override
     public void submit() {
-webElement.submit();
+        webElement.submit();
     }
 
     @Override
     public void sendKeys(CharSequence... keysToSend) {
-webElement.sendKeys(keysToSend);
+        webElement.sendKeys(keysToSend);
     }
 
     @Override
@@ -72,7 +71,7 @@ webElement.sendKeys(keysToSend);
     public boolean isDisplayed() {
         try {
             return webElement.isDisplayed();
-        } catch (NoSuchElementException | TimeoutException e){
+        } catch (NoSuchElementException | TimeoutException e) {
             return false;
         }
     }

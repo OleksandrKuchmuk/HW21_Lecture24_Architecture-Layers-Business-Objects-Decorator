@@ -5,11 +5,11 @@ import elements.DropDownMenu;
 import elements.Product;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AllLaptopPage extends BasePage {
     private static final Logger LOGGER = LogManager.getLogger(AllLaptopPage.class);
+
 
     @FindBy(xpath = "//select")
     private DropDownMenu sortingDropDownMenu;
@@ -23,7 +23,7 @@ public class AllLaptopPage extends BasePage {
     @FindBy(xpath = "//a[@class='checkbox-filter__link' and @ data-id='HP']")
     private CheckBox checkBoxHP;
 
-    @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted'][1]")
+    @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted' and @title='Ноутбук HP ZBook Studio G8 (46N54AV_V1) Turbo Silver']")
     private Product firstLaptopOnPageHp;
 
 
@@ -51,9 +51,9 @@ public class AllLaptopPage extends BasePage {
         return this;
     }
 
-    public FirstLaptopHPPage chooseFirstProduct() {
+    public AllLaptopPage chooseFirstHPLaptop() {
         LOGGER.info("Choose first laptop on page after sorting");
         firstLaptopOnPageHp.click();
-        return new FirstLaptopHPPage();
+        return this;
     }
 }

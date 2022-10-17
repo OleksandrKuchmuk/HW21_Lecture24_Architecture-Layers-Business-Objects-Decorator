@@ -4,7 +4,6 @@ import elements.Button;
 import elements.Input;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class RozetkaMainPage extends BasePage {
